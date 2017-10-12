@@ -86,7 +86,7 @@ for($i=0;count($out)>$i;$i++)
 {
  $body=$body.'
 <tr>
-<td class="left">'.htmlentities($out[$i]["count"], ENT_QUOTES,"ISO-8859-1").'</td>
+<td class="left">'.htmlentities($out[$i]["count"], ENT_QUOTES).'</td>
 <td class="left">
 <form action="index.php?where=types" method="post">
 <input type="hidden" name="type_id" value="'.$out[$i]["type_id"].'">

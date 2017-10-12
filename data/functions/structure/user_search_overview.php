@@ -17,15 +17,15 @@ $status='<td class="too_late_out" colspan="2">'.htmlentities($lang->aadj[0], ENT
 return'
 <table class="search_out">
   <tr>
-    <td class="title" colspan="2"><a href="index.php?where=user_display&user_id='.$info["user_id"].'">'.htmlentities($info["name"], ENT_QUOTES,"ISO-8859-1").'</a></td>
+    <td class="title" colspan="2"><a href="index.php?where=user_display&user_id='.$info["user_id"].'">'.htmlentities($info["name"], ENT_QUOTES).'</a></td>
   </tr>
   <tr>
     <td class="left">'.htmlentities($lang->aada[0], ENT_QUOTES, "UTF-8").'</td>
-    <td class="right"><a href="mailto:'.htmlentities($info["email"], ENT_QUOTES,"ISO-8859-1").'">'.htmlentities($info["email"], ENT_QUOTES,"ISO-8859-1").'</a></td>
+    <td class="right"><a href="mailto:'.htmlentities($info["email"], ENT_QUOTES).'">'.htmlentities($info["email"], ENT_QUOTES).'</a></td>
   </tr>
     <tr>
     <td class="left">'.htmlentities($lang->aaca[0], ENT_QUOTES, "UTF-8").'</td>
-    <td class="right">'.htmlentities($info["barcode"], ENT_QUOTES,"ISO-8859-1").'</td>
+    <td class="right">'.htmlentities($info["barcode"], ENT_QUOTES).'</td>
   </tr>
     <tr>
     '.$status.'

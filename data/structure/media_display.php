@@ -118,15 +118,15 @@ $body=$body.'
 <table id="media_all">
   <tr>
     <td class="left">'.htmlentities($lang->aaat[0], ENT_QUOTES, "UTF-8").'</td>
-    <td><input class="right1" value="'.htmlentities($adr["title"], ENT_QUOTES,"ISO-8859-1").'" name="title" type="text" size="100" maxlength="100"></td>
+    <td><input class="right1" value="'.htmlentities($adr["title"], ENT_QUOTES).'" name="title" type="text" size="100" maxlength="100"></td>
   </tr>
   <tr>
     <td class="left">'.htmlentities($lang->aaau[0], ENT_QUOTES, "UTF-8").'</td>
-    <td><input class="right1" value="'.htmlentities($adr["author"], ENT_QUOTES,"ISO-8859-1").'" name="author" type="text" size="100" maxlength="100"></td>
+    <td><input class="right1" value="'.htmlentities($adr["author"], ENT_QUOTES).'" name="author" type="text" size="100" maxlength="100"></td>
   </tr>
   <tr>
     <td class="left">'.htmlentities($lang->aabh[0], ENT_QUOTES, "UTF-8").'</td>
-    <td><input class="right1" value="'.htmlentities($adr["series"], ENT_QUOTES,"ISO-8859-1").'" name="series" type="text" size="100" maxlength="100"></td>
+    <td><input class="right1" value="'.htmlentities($adr["series"], ENT_QUOTES).'" name="series" type="text" size="100" maxlength="100"></td>
   </tr>
   <tr>
     <td class="left">'.htmlentities($lang->aabi[0], ENT_QUOTES, "UTF-8").'</td>
@@ -203,7 +203,7 @@ $out_time='<div class="red">'.$timer[1].'</div>';
 
 
 $body=$body.'
-<td class="copy_middle_left"><a href="index.php?where=user_display&user_id='.$copy[$i]["user"]["user_id"].'">'.htmlentities($copy[$i]["user"]["name"], ENT_QUOTES,"ISO-8859-1").'</a></td>';
+<td class="copy_middle_left"><a href="index.php?where=user_display&user_id='.$copy[$i]["user"]["user_id"].'">'.htmlentities($copy[$i]["user"]["name"], ENT_QUOTES).'</a></td>';
 $body=$body.'
 <td class="copy_middle">'.$copy[$i]["user"]["renewal_count"].'</td>';
 $body=$body.'

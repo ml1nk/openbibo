@@ -35,9 +35,9 @@ if($success !=null)
 $body=$body.'
 <div id="margin">
 <div id="nothing_special">
-<a href="index.php?where=media_display&media_id='.$success["media_id"].'">'.htmlentities($success["media_title"], ENT_QUOTES,"ISO-8859-1").'</a>
+<a href="index.php?where=media_display&media_id='.$success["media_id"].'">'.htmlentities($success["media_title"], ENT_QUOTES).'</a>
 <br/>'.htmlentities($lang->aaet[0], ENT_QUOTES, "UTF-8").'<br/>
-<a href="index.php?where=user_display&user_id='.$success["user_id"].'">'.htmlentities($success["user_name"], ENT_QUOTES,"ISO-8859-1").'</a>
+<a href="index.php?where=user_display&user_id='.$success["user_id"].'">'.htmlentities($success["user_name"], ENT_QUOTES).'</a>
 <br/>
 ';
 if($success["time"][0])

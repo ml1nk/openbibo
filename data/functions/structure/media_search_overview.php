@@ -11,11 +11,11 @@ $available='<td class="unavailable" colspan="2">'.htmlentities($lang->aabg[0], E
 }
 if ($link)
 {
-$out=htmlentities($info["title"], ENT_QUOTES,"ISO-8859-1");
+$out=htmlentities($info["title"], ENT_QUOTES);
 }
 else
 {
-$out='<a href="index.php?where=media_display&media_id='.$info["media_id"].'">'.htmlentities($info["title"], ENT_QUOTES,"ISO-8859-1").'</a>';
+$out='<a href="index.php?where=media_display&media_id='.$info["media_id"].'">'.htmlentities($info["title"], ENT_QUOTES).'</a>';
 }
 
 
@@ -27,19 +27,19 @@ return'
   </tr>
   <tr>
     <td class="left">'.htmlentities($lang->aaau[0], ENT_QUOTES, "UTF-8").'</td>
-    <td class="right">'.htmlentities($info["author"], ENT_QUOTES,"ISO-8859-1").'</td>
+    <td class="right">'.htmlentities($info["author"], ENT_QUOTES).'</td>
   </tr>
     <tr>
     <td class="left">'.htmlentities($lang->aabh[0], ENT_QUOTES, "UTF-8").'</td>
-    <td class="right">'.htmlentities($info["series"], ENT_QUOTES,"ISO-8859-1").'</td>
+    <td class="right">'.htmlentities($info["series"], ENT_QUOTES).'</td>
   </tr>
     <tr>
     <td class="left">'.htmlentities($lang->aabi[0], ENT_QUOTES, "UTF-8").'</td>
-    <td class="right">'.htmlentities(getmediacategory($info["category_id"]), ENT_QUOTES,"ISO-8859-1").'</td>
+    <td class="right">'.htmlentities(getmediacategory($info["category_id"]), ENT_QUOTES).'</td>
   </tr>
     <tr>
     <td class="left">'.htmlentities($lang->aabj[0], ENT_QUOTES, "UTF-8").'</td>
-    <td class="right">'.htmlentities($medienart[0], ENT_QUOTES,"ISO-8859-1").'</td>
+    <td class="right">'.htmlentities($medienart[0], ENT_QUOTES).'</td>
   </tr>
     <tr>
     '.$available.'

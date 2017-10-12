@@ -250,8 +250,8 @@ for($i=0;count($out)>$i;$i++)
 {
  $body=$body.'
 <tr>
-<td class="left">'.htmlentities($out[$i]["date_bigger"], ENT_QUOTES,"ISO-8859-1").'</td>
-<td class="left">'.htmlentities($out[$i]["date_smaller"], ENT_QUOTES,"ISO-8859-1").'</td>
+<td class="left">'.htmlentities($out[$i]["date_bigger"], ENT_QUOTES).'</td>
+<td class="left">'.htmlentities($out[$i]["date_smaller"], ENT_QUOTES).'</td>
 <td class="left1"><a href="index.php?where=days_off&delete_id='.$out[$i]["days_off_id"].'">'.htmlentities($lang->aabk[0], ENT_QUOTES, "UTF-8").'</a></td>
  </tr>
  ';

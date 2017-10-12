@@ -51,7 +51,7 @@ $body=$body.'
 <table id="master">
 <tr>
 <td class="left">'.htmlentities($lang->aacz[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title">'.htmlentities($session[2], ENT_QUOTES,"ISO-8859-1").'</td>
+<td class="title">'.htmlentities($session[2], ENT_QUOTES).'</td>
 </tr>
 <tr>
 <td class="left">'.htmlentities($lang->aafu[0], ENT_QUOTES, "UTF-8").'</td>

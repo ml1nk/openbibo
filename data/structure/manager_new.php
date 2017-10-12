@@ -125,7 +125,7 @@ for($i=0;count($out)>$i;$i++)
 {
  $body=$body.'
 <tr>
-<td class="left">'.htmlentities($out[$i]["name"], ENT_QUOTES,"ISO-8859-1").'</td>
+<td class="left">'.htmlentities($out[$i]["name"], ENT_QUOTES).'</td>
 <td class="left">
 <form action="index.php?where=manager_new" method="post">
 <input type="hidden" name="password_manager" value="'.$out[$i]["manager_id"].'">

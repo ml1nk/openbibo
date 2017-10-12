@@ -190,15 +190,15 @@ $body=$body.'
 <table id="media_all">
   <tr>
     <td class="left">'.htmlentities($lang->aacz[0], ENT_QUOTES, "UTF-8").'</td>
-    <td><input class="right1" value="'.htmlentities($adr["name"], ENT_QUOTES,"ISO-8859-1").'" name="name" type="text" size="100" maxlength="100"></td>
+    <td><input class="right1" value="'.htmlentities($adr["name"], ENT_QUOTES).'" name="name" type="text" size="100" maxlength="100"></td>
   </tr>
   <tr>
     <td class="left">'.htmlentities($lang->aada[0], ENT_QUOTES, "UTF-8").'</td>
-    <td><input class="right1" value="'.htmlentities($adr["email"], ENT_QUOTES,"ISO-8859-1").'" name="email" type="text" size="100" maxlength="100"></td>
+    <td><input class="right1" value="'.htmlentities($adr["email"], ENT_QUOTES).'" name="email" type="text" size="100" maxlength="100"></td>
   </tr>
   <tr>
     <td class="left">'.htmlentities($lang->aaas[0], ENT_QUOTES, "UTF-8").'</td>
-    <td><input class="barcode" value="'.htmlentities($adr["barcode"], ENT_QUOTES,"ISO-8859-1").'" name="barcode" type="text" size="6" maxlength="6"></td>
+    <td><input class="barcode" value="'.htmlentities($adr["barcode"], ENT_QUOTES).'" name="barcode" type="text" size="6" maxlength="6"></td>
   </tr>
     <tr>
     <td>
@@ -274,7 +274,7 @@ $out_time='<div class="red">'.$timer[1].'</div>';
 
 
 $body=$body.'
-<td class="copy_middle_left"><a href="index.php?where=media_display&media_id='.$getborrow[$i]["media_id"].'">'.htmlentities($getborrow[$i]["media_info"]["title"], ENT_QUOTES,"ISO-8859-1").'</a></td>';
+<td class="copy_middle_left"><a href="index.php?where=media_display&media_id='.$getborrow[$i]["media_id"].'">'.htmlentities($getborrow[$i]["media_info"]["title"], ENT_QUOTES).'</a></td>';
 $body=$body.'
 <td class="copy_middle">'.$getborrow[$i]["renewal_count"].'</td>';
 $body=$body.'
