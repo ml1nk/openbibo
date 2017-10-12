@@ -7,7 +7,7 @@ $adressen_query = db::get()->query($sql) or error_sql($sql);
 
 function update_design($text)
 {
-$out=check_design_file(html_entity_decode($text, ENT_NOQUOTES, "UTF-8").".design");
+$out=check_design_file(html_entity_decode($text, ENT_NOQUOTES).".design");
 if($out==null){return false;}
 $sql = 'UPDATE configuration SET design="'.filter($text).'"';
 $adressen_query = db::get()->query($sql) or error_sql($sql);
@@ -16,7 +16,7 @@ return true;
 
 function update_language($text)
 {
-$out=check_language_file(html_entity_decode($text, ENT_NOQUOTES, "UTF-8").".lang.xml");
+$out=check_language_file(html_entity_decode($text, ENT_NOQUOTES).".lang.xml");
 if($out==null){return false;}
 $sql = 'UPDATE configuration SET language="'.filter($text).'"';
 $adressen_query = db::get()->query($sql) or error_sql($sql);

@@ -7,7 +7,7 @@ $search_out=null;
 if (!isset($_POST["search_text"]))
 {
 $body = $body.'<center><div id="info_text">'.
-utf8_encode($configuration[5]).
+$configuration[5].
 '</div></center>';
 }
 
@@ -80,7 +80,7 @@ $search_out = $search_out . media_search_overview($media[$i],$lang);
 }
 else
 {
-$search_out = '<div id="error">'.htmlentities($lang->aabc[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aabd[0], ENT_QUOTES, "UTF-8").'</div>';
+$search_out = '<div id="error">'.htmlentities($lang->aabc[0], ENT_QUOTES)."<br/>".htmlentities($lang->aabd[0], ENT_QUOTES).'</div>';
 }
 
 }
@@ -91,7 +91,7 @@ $search_out = '<div id="search_results">'.$search_out.'</div>';
 }
 else
 {
-$search_out = '<div id="search_results"><div id="nothing">'.htmlentities($lang->aahx[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaba[0], ENT_QUOTES, "UTF-8").'</div></div>';
+$search_out = '<div id="search_results"><div id="nothing">'.htmlentities($lang->aahx[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaba[0], ENT_QUOTES).'</div></div>';
 }
 }
 
@@ -102,13 +102,13 @@ $body = $body.'
 <table id="search_up">
 <tr>
 
-<td class="left">'.htmlentities($lang->aaaw[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aaaw[0], ENT_QUOTES).'</td>
 <td><input id="right1" name="search_text" type="text" value='."'".$oldsearch."'".' size="100" maxlength="100"></td>
 
 </tr>
 <tr>
 <td colspan="2">
-<input id="submit" type="submit" value="'.htmlentities($lang->aaav[0], ENT_QUOTES, "UTF-8").'">
+<input id="submit" type="submit" value="'.htmlentities($lang->aaav[0], ENT_QUOTES).'">
 </td>
 </tr>
 
@@ -123,15 +123,15 @@ $out = get_in_time($lang,$configuration[4],true);
 $body = $body.'
 <table id="home">
 <tr>
-<td class="left">'.htmlentities($lang->aaaj[0], ENT_QUOTES, "UTF-8").'</td><td class="right">'.getallmedia().'</td>
+<td class="left">'.htmlentities($lang->aaaj[0], ENT_QUOTES).'</td><td class="right">'.getallmedia().'</td>
 </tr><tr>
-<td class="left">'.htmlentities($lang->aaak[0], ENT_QUOTES, "UTF-8").'</td><td class="right">'.getallcopy().'</td>
+<td class="left">'.htmlentities($lang->aaak[0], ENT_QUOTES).'</td><td class="right">'.getallcopy().'</td>
 </tr><tr>
-<td class="left">'.htmlentities($lang->aaaq[0], ENT_QUOTES, "UTF-8").'</td><td class="right">'.getalluser().'</td>
+<td class="left">'.htmlentities($lang->aaaq[0], ENT_QUOTES).'</td><td class="right">'.getalluser().'</td>
 </tr><tr>
-<td class="left">'.htmlentities($lang->aaal[0], ENT_QUOTES, "UTF-8").'</td><td class="right">'.getallborrow().'</td>
+<td class="left">'.htmlentities($lang->aaal[0], ENT_QUOTES).'</td><td class="right">'.getallborrow().'</td>
 </tr><tr>
-<td class="left">'.htmlentities($lang->aajw[0], ENT_QUOTES, "UTF-8").'</td><td class="right">'.count($out).'</td>
+<td class="left">'.htmlentities($lang->aajw[0], ENT_QUOTES).'</td><td class="right">'.count($out).'</td>
 </tr></table>
 ';
 }

@@ -9,7 +9,7 @@ if ($handle = opendir("design/")) {
         if ($file != "." && $file != "..") {
 $out=check_design_file($file);
 if($out!=null){
-if($out==utf8_encode($design))
+if($out==$design)
 {
 $output=$output.'
 <option value="'.htmlentities($out, ENT_QUOTES,"UTF-8").'" selected>'.htmlentities($out, ENT_QUOTES,"UTF-8").'</option>';

@@ -27,11 +27,11 @@ $body='
 <table id="print" rules="all">
 <tr>
 <td class="title">'.count($out).'</td>
-<td class="title">'.htmlentities($lang->aahs[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title">'.htmlentities($lang->aaht[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title">'.htmlentities($lang->aahu[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title">'.htmlentities($lang->aahv[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title">'.htmlentities($lang->aaia[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="title">'.htmlentities($lang->aahs[0], ENT_QUOTES).'</td>
+<td class="title">'.htmlentities($lang->aaht[0], ENT_QUOTES).'</td>
+<td class="title">'.htmlentities($lang->aahu[0], ENT_QUOTES).'</td>
+<td class="title">'.htmlentities($lang->aahv[0], ENT_QUOTES).'</td>
+<td class="title">'.htmlentities($lang->aaia[0], ENT_QUOTES).'</td>
 </tr>
 <tr>
 <td class="empty" colspan="6"></td>

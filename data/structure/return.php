@@ -5,14 +5,14 @@ $body='
 <form action="#" method="post">
 <table class="return">
 <tr>
-<td colspan="2" class="title">'.htmlentities($lang->aaeq[0], ENT_QUOTES, "UTF-8").'</td>
+<td colspan="2" class="title">'.htmlentities($lang->aaeq[0], ENT_QUOTES).'</td>
 </tr>
 <tr>
-<td class="left">'.htmlentities($lang->aaca[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aaca[0], ENT_QUOTES).'</td>
 <td><input name="barcode" class="barcode" type="text" size="6" maxlength="6"></td>
 </tr>
 <tr>
-<td colspan="2"><input class="submit" type="submit" value="'.htmlentities($lang->aaer[0], ENT_QUOTES, "UTF-8").'"></td>
+<td colspan="2"><input class="submit" type="submit" value="'.htmlentities($lang->aaer[0], ENT_QUOTES).'"></td>
 </tr>
 </table>
 </form>
@@ -36,20 +36,20 @@ $body=$body.'
 <div id="margin">
 <div id="nothing_special">
 <a href="index.php?where=media_display&media_id='.$success["media_id"].'">'.htmlentities($success["media_title"], ENT_QUOTES).'</a>
-<br/>'.htmlentities($lang->aaet[0], ENT_QUOTES, "UTF-8").'<br/>
+<br/>'.htmlentities($lang->aaet[0], ENT_QUOTES).'<br/>
 <a href="index.php?where=user_display&user_id='.$success["user_id"].'">'.htmlentities($success["user_name"], ENT_QUOTES).'</a>
 <br/>
 ';
 if($success["time"][0])
 {
 $body=$body.'
-<div class="green">'.htmlentities($lang->aaeu[0], ENT_QUOTES, "UTF-8").'</div>
+<div class="green">'.htmlentities($lang->aaeu[0], ENT_QUOTES).'</div>
 ';
 }
 else
 {
 $body=$body.'
-<div class="red">'.htmlentities($lang->aaev[0], ENT_QUOTES, "UTF-8").' '.$success["time"][1].' '.htmlentities($lang->aaew[0], ENT_QUOTES, "UTF-8").'<br/>
+<div class="red">'.htmlentities($lang->aaev[0], ENT_QUOTES).' '.$success["time"][1].' '.htmlentities($lang->aaew[0], ENT_QUOTES).'<br/>
 ';
 }
 $body=$body.'
@@ -68,7 +68,7 @@ $body=$body.'
 else
 {
 $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aaea[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaes[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aaea[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaes[0], ENT_QUOTES).'</div></div>
 ';
 }
 
@@ -77,7 +77,7 @@ $body=$body.'
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aaaz[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaba[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaaz[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaba[0], ENT_QUOTES).'</div></div>
 ';
 }
 
@@ -85,7 +85,7 @@ $body=$body.'
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aaax[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaay[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaax[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaay[0], ENT_QUOTES).'</div></div>
 ';
 }
 

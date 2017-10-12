@@ -1,7 +1,6 @@
 <?php
 function load_design($design,$where,$menu)
 {
-$design =  utf8_encode($design);
 $pathtodesign="design/".$design.".design";
 if (file_exists ($pathtodesign))
 {

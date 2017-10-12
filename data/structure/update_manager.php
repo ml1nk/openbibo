@@ -42,7 +42,7 @@ if($file_name[0]=="openbibo" and str_replace(".", "", $software_version)==$file_
 
 $body=$body.'
 <div id="update" >
-<div>'.htmlentities($lang->aakj[0], ENT_QUOTES, "UTF-8").'</div>
+<div>'.htmlentities($lang->aakj[0], ENT_QUOTES).'</div>
 <form action="index.php?where=update_manager" method="post" enctype="multipart/form-data">
     <input class="upload" name="update_file" type="file" maxlength="100000" >
     <input id="submit" type="submit" name="Submit" value="Senden">
@@ -53,6 +53,6 @@ $body=$body.'
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aakh[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaki[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aakh[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaki[0], ENT_QUOTES).'</div></div>
 ';
 }}

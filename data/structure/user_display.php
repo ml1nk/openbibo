@@ -12,7 +12,7 @@ if (mysqli_num_rows($adressen_query) > 1){error_sql($sql);}
 if(mysqli_num_rows($adressen_query)==0)
 {
 $body='
-<div id="middle"><div id="error">'.htmlentities($lang->aado[0], ENT_QUOTES, "UTF-8")." ".$_GET["user_id"]." ".htmlentities($lang->aabn[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aadn[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="middle"><div id="error">'.htmlentities($lang->aado[0], ENT_QUOTES)." ".$_GET["user_id"]." ".htmlentities($lang->aabn[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aadn[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
@@ -33,7 +33,7 @@ if((is_numeric($_POST["barcode"])) and (strlen($_POST["barcode"])==6))
 if($_POST["name"]==$adr["name"] and $_POST["email"]==$adr["email"] and $_POST["barcode"]==$adr["barcode"])
 {
 $body='
-<div id="margin"><div id="error">'.htmlentities($lang->aabp[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aabq[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aabp[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aabq[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
@@ -42,7 +42,7 @@ $not_douple = updateuser($_GET["user_id"],$_POST["name"],$_POST["email"],$_POST[
 if(!$not_douple)
 {
 $body='
-<div id="margin"><div id="error">'.htmlentities($lang->aabp[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aabs[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aabp[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aabs[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
@@ -57,14 +57,14 @@ $body=null;
 else
 {
 $body='
-<div id="margin"><div id="error">'.htmlentities($lang->aaax[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaay[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaax[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaay[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
 else
 {
 $body='
-<div id="margin"><div id="error">'.htmlentities($lang->aadu[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aabu[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aadu[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aabu[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
@@ -87,7 +87,7 @@ if(!$is_new)
 {
 $barcode=$_POST["new_borrow"];
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aaeg[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aabw[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaeg[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aabw[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
@@ -99,14 +99,14 @@ else
 {
 $barcode=$_POST["new_borrow"];
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aaaz[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aaba[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaaz[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aaba[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aaax[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaay[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaax[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaay[0], ENT_QUOTES).'</div></div>
 ';
 }}else{$barcode=null;}
 
@@ -118,13 +118,13 @@ $really=delete_borrow($_GET["get_back_copy"],$_GET["get_back_media"],$_GET["user
 if($really)
 {
 $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aadx[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aady[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aadx[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aady[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aaea[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aaeb[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaea[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aaeb[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
@@ -137,13 +137,13 @@ $really=delete_all_borrow($_GET["user_id"]);
 if($really>0)
 {
 $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aafj[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aafk[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aafj[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aafk[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aafl[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aafm[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aafl[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aafm[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
@@ -155,13 +155,13 @@ $really=updateallborrow($_GET["user_id"],$configuration[4]);
 if($really)
 {
 $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aafn[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aafo[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aafn[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aafo[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aafp[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aafq[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aafp[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aafq[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
@@ -173,13 +173,13 @@ $really = updateborrow($_GET["extend_media"],$_GET["extend_copy"],$configuration
 if($really)
 {
 $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aafe[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aaff[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aafe[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aaff[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
 {
 $body=$body.'
-<div id="margin"><div id="error">'.htmlentities($lang->aaez[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aafg[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aaez[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aafg[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
@@ -189,22 +189,22 @@ $body=$body.'
 
 <table id="media_all">
   <tr>
-    <td class="left">'.htmlentities($lang->aacz[0], ENT_QUOTES, "UTF-8").'</td>
+    <td class="left">'.htmlentities($lang->aacz[0], ENT_QUOTES).'</td>
     <td><input class="right1" value="'.htmlentities($adr["name"], ENT_QUOTES).'" name="name" type="text" size="100" maxlength="100"></td>
   </tr>
   <tr>
-    <td class="left">'.htmlentities($lang->aada[0], ENT_QUOTES, "UTF-8").'</td>
+    <td class="left">'.htmlentities($lang->aada[0], ENT_QUOTES).'</td>
     <td><input class="right1" value="'.htmlentities($adr["email"], ENT_QUOTES).'" name="email" type="text" size="100" maxlength="100"></td>
   </tr>
   <tr>
-    <td class="left">'.htmlentities($lang->aaas[0], ENT_QUOTES, "UTF-8").'</td>
+    <td class="left">'.htmlentities($lang->aaas[0], ENT_QUOTES).'</td>
     <td><input class="barcode" value="'.htmlentities($adr["barcode"], ENT_QUOTES).'" name="barcode" type="text" size="6" maxlength="6"></td>
   </tr>
     <tr>
     <td>
-<div class="over_all_out"><a class="over_all" id="change" href="index.php?where=user_display&user_id='.$_GET["user_id"].'&delete=yes">'.htmlentities($lang->aabk[0], ENT_QUOTES, "UTF-8").'</a></div>
+<div class="over_all_out"><a class="over_all" id="change" href="index.php?where=user_display&user_id='.$_GET["user_id"].'&delete=yes">'.htmlentities($lang->aabk[0], ENT_QUOTES).'</a></div>
 </td>
-    <td><input class="submit1" type="submit" value="'.htmlentities($lang->aabr[0], ENT_QUOTES, "UTF-8").'"></td>
+    <td><input class="submit1" type="submit" value="'.htmlentities($lang->aabr[0], ENT_QUOTES).'"></td>
   </tr>
 </table>
 </form>
@@ -219,24 +219,24 @@ $body=$body.'
 <table id="barcodes">';
 
 $body=$body.'
-<tr><td id="media_copy" colspan="6">'.htmlentities($lang->aadv[0], ENT_QUOTES, "UTF-8").'</td></tr>';
+<tr><td id="media_copy" colspan="6">'.htmlentities($lang->aadv[0], ENT_QUOTES).'</td></tr>';
 
 $body=$body.'
 <tr>';
 $body=$body.'
-<td id=title_left>'.htmlentities($lang->aaca[0], ENT_QUOTES, "UTF-8").'</td>';
+<td id=title_left>'.htmlentities($lang->aaca[0], ENT_QUOTES).'</td>';
 $body=$body.'
-<td id=title_middle_left>'.htmlentities($lang->aadw[0], ENT_QUOTES, "UTF-8").'</td>';
+<td id=title_middle_left>'.htmlentities($lang->aadw[0], ENT_QUOTES).'</td>';
 $body=$body.'
-<td id=title_middle>'.htmlentities($lang->aacc[0], ENT_QUOTES, "UTF-8").'</td>';
+<td id=title_middle>'.htmlentities($lang->aacc[0], ENT_QUOTES).'</td>';
 $body=$body.'
-<td id=title_middle_right>'.htmlentities($lang->aacd[0], ENT_QUOTES, "UTF-8").'</td>';
+<td id=title_middle_right>'.htmlentities($lang->aacd[0], ENT_QUOTES).'</td>';
 $body=$body.'
 <td class="copy_right">
-<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&get_back_all=yes">'.htmlentities($lang->aafh[0], ENT_QUOTES, "UTF-8").'</a>
+<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&get_back_all=yes">'.htmlentities($lang->aafh[0], ENT_QUOTES).'</a>
 </td>
 <td class="copy_right">
-<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&extend_all=yes">'.htmlentities($lang->aafi[0], ENT_QUOTES, "UTF-8").'</a>
+<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&extend_all=yes">'.htmlentities($lang->aafi[0], ENT_QUOTES).'</a>
 </td>
 ';
 $body=$body.'
@@ -283,10 +283,10 @@ $body=$body.'
 
 $body=$body.'
 <td class="copy_right">
-<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&get_back_media='.$getborrow[$i]["media_id"].'&get_back_copy='.$getborrow[$i]["copy_id"].'">'.htmlentities($lang->aadz[0], ENT_QUOTES, "UTF-8").'</a>
+<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&get_back_media='.$getborrow[$i]["media_id"].'&get_back_copy='.$getborrow[$i]["copy_id"].'">'.htmlentities($lang->aadz[0], ENT_QUOTES).'</a>
 </td>
 <td class="copy_right">
-<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&extend_media='.$getborrow[$i]["media_id"].'&extend_copy='.$getborrow[$i]["copy_id"].'">'.htmlentities($lang->aaej[0], ENT_QUOTES, "UTF-8").'</a>
+<a href="index.php?where=user_display&user_id='.$_GET["user_id"].'&extend_media='.$getborrow[$i]["media_id"].'&extend_copy='.$getborrow[$i]["copy_id"].'">'.htmlentities($lang->aaej[0], ENT_QUOTES).'</a>
 </td>
 ';
 
@@ -299,7 +299,7 @@ $body=$body.'
 else
 {
 $body=$body.'
-<div id="nothing">'.htmlentities($lang->aadr[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aads[0], ENT_QUOTES, "UTF-8").'</div>
+<div id="nothing">'.htmlentities($lang->aadr[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aads[0], ENT_QUOTES).'</div>
 ';
 }
 
@@ -307,14 +307,14 @@ $body=$body.'
 <form action="index.php?where=user_display&user_id='.$_GET["user_id"].'" method="post">
 <table id="new_copy">
   <tr>
-    <td  id="new_copy_title" colspan="2">'.htmlentities($lang->aaee[0], ENT_QUOTES, "UTF-8").'</td>
+    <td  id="new_copy_title" colspan="2">'.htmlentities($lang->aaee[0], ENT_QUOTES).'</td>
   </tr>
   <tr>
-    <td class="left">'.htmlentities($lang->aaca[0], ENT_QUOTES, "UTF-8").'</td>
+    <td class="left">'.htmlentities($lang->aaca[0], ENT_QUOTES).'</td>
     <td><input id="new_copy_input" value="'.$barcode.'" name="new_borrow" type="text" size="6" maxlength="6"></td>
   </tr>
   <tr>
-    <td colspan="2"><input  id="new_copy_submit" type="submit" value="'.htmlentities($lang->aaef[0], ENT_QUOTES, "UTF-8").'"></td>
+    <td colspan="2"><input  id="new_copy_submit" type="submit" value="'.htmlentities($lang->aaef[0], ENT_QUOTES).'"></td>
   </tr>
 </table>
 </form>
@@ -328,18 +328,18 @@ if((isset($_POST["really"])) and ($_POST["really"]=="yes"))
 {
 delete_user($_GET["user_id"]);
 $body='
-<div id="margin"><div id="nothing">'.htmlentities($lang->aadt[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aaby[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aadt[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aaby[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
 {
 $body='
-<div id="margin"><div id="error_special">'.htmlentities($lang->aadq[0], ENT_QUOTES, "UTF-8").'<br/>'.'
+<div id="margin"><div id="error_special">'.htmlentities($lang->aadq[0], ENT_QUOTES).'<br/>'.'
 <form action="index.php?where=user_display&user_id='.$_GET["user_id"].'&delete=yes" method="post">
 <input name="really" type="hidden" value="yes" >
-<input id="float_left" class="submit2" type="submit" value="'.htmlentities($lang->aack[0], ENT_QUOTES, "UTF-8").'">
+<input id="float_left" class="submit2" type="submit" value="'.htmlentities($lang->aack[0], ENT_QUOTES).'">
 </form>
-<div id="float_right" class="over_all_out"><a  class="over_all" href="index.php?where=user_display&user_id='.$_GET["user_id"].'">'.htmlentities($lang->aacl[0], ENT_QUOTES, "UTF-8").'</a></div>
+<div id="float_right" class="over_all_out"><a  class="over_all" href="index.php?where=user_display&user_id='.$_GET["user_id"].'">'.htmlentities($lang->aacl[0], ENT_QUOTES).'</a></div>
 </div></div>
 '.$body;
 }}
@@ -348,12 +348,12 @@ $body='
 }
 else
 {
-$body='<div id="middle"><div id="error">'.htmlentities($lang->aadm[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aadn[0], ENT_QUOTES, "UTF-8").'</div></div>';
+$body='<div id="middle"><div id="error">'.htmlentities($lang->aadm[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aadn[0], ENT_QUOTES).'</div></div>';
 }
 }
 else
 {
-$body='<div id="middle"><div id="nothing">'.htmlentities($lang->aadk[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aadl[0], ENT_QUOTES, "UTF-8").'</div></div>';
+$body='<div id="middle"><div id="nothing">'.htmlentities($lang->aadk[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aadl[0], ENT_QUOTES).'</div></div>';
 }
 }
 

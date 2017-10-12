@@ -63,7 +63,7 @@ $anything=true;
 if($numeric)
 {
  $body='
-<div id="margin"><div id="error">'.htmlentities($lang->aagl[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aagm[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="error">'.htmlentities($lang->aagl[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aagm[0], ENT_QUOTES).'</div></div>
 ';
 }
 
@@ -80,36 +80,36 @@ $body=$body.'
 <form action="index.php?where=configuration" method="post">
 <table id="master">
 <tr>
-<td class="left">'.htmlentities($lang->aagn[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aagn[0], ENT_QUOTES).'</td>
 <td><input class="input" name="library_name" value="'.htmlentities($configuration[3], ENT_QUOTES).'" type="text" size="80" maxlength="80" ></td>
 </tr>
 <tr>
-<td class="left">'.htmlentities($lang->aakc[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aakc[0], ENT_QUOTES).'</td>
 <td><input class="input" name="info_text" value="'.htmlentities($configuration[5], ENT_QUOTES).'" type="text" size="500" maxlength="500" ></td>
 </tr>
 <tr>
-<td class="left">'.htmlentities($lang->aago[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aago[0], ENT_QUOTES).'</td>
 <td><input class="input" name="logout_time" value="'.htmlentities($configuration[2], ENT_QUOTES).'" type="text" size="11" maxlength="11" ></td>
 </tr>
 <tr>
-<td class="left">'.htmlentities($lang->aagp[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aagp[0], ENT_QUOTES).'</td>
 <td><input class="input" name="borrow_days" value="'.htmlentities($configuration[4], ENT_QUOTES).'" type="text" size="11" maxlength="11" ></td>
 </tr>
 <tr>
-<td class="left">'.htmlentities($lang->aakk[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aakk[0], ENT_QUOTES).'</td>
 <td><input class="input" name="cent_per_day" value="'.htmlentities($configuration[6], ENT_QUOTES).'" type="text" size="11" maxlength="11" ></td>
 </tr>
 <tr>
-<td class="left">'.htmlentities($lang->aagq[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aagq[0], ENT_QUOTES).'</td>
 <td>'.chose_design($configuration[1]).'</td>
 </tr>
 <tr>
-<td class="left">'.htmlentities($lang->aagr[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aagr[0], ENT_QUOTES).'</td>
 <td>'.chose_language($configuration[0]).'</td>
 </tr>
 <tr>
 <td></td>
-<td><input id="submit" type="submit" value="'.htmlentities($lang->aafs[0], ENT_QUOTES, "UTF-8").'"></td>
+<td><input id="submit" type="submit" value="'.htmlentities($lang->aafs[0], ENT_QUOTES).'"></td>
 </tr>
 </table>
 </form>

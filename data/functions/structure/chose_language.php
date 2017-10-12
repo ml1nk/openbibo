@@ -9,7 +9,7 @@ if ($handle = opendir("language/")) {
         if ($file != "." && $file != "..") {
 $out=check_language_file($file);
 if($out!=null){
-if($out==utf8_encode($language))
+if($out==$language)
 {
 $output=$output.'
 <option value="'.htmlentities($out, ENT_QUOTES,"UTF-8").'" selected>'.htmlentities($out, ENT_QUOTES,"UTF-8").'</option>';

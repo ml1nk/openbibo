@@ -8,13 +8,13 @@ if(isset($_GET["delete_id"]) and is_numeric($_GET["delete_id"]))
 if(remove_days_off($_GET["delete_id"])==0)
 {
  $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aajs[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aajt[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aajs[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aajt[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
 {
  $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aaju[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aajv[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aaju[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aajv[0], ENT_QUOTES).'</div></div>
 ';
 }
 
@@ -36,20 +36,20 @@ if($bigger+1<$smaller)
 {
 new_days_off($bigger,$smaller);
  $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aajq[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aajr[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aajq[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aajr[0], ENT_QUOTES).'</div></div>
 ';
 }
 else
 {
  $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aajo[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aajp[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aajo[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aajp[0], ENT_QUOTES).'</div></div>
 ';
 }
 }
 else
 {
  $body=$body.'
-<div id="margin"><div id="nothing">'.htmlentities($lang->aajm[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aajn[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin"><div id="nothing">'.htmlentities($lang->aajm[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aajn[0], ENT_QUOTES).'</div></div>
 ';
 }
 
@@ -207,16 +207,16 @@ $body=$body.'
 <input type="hidden" name="new_days_off" value="yes">
 <table id="master">
 <tr>
-<td class="title" colspan="7">'.htmlentities($lang->aajf[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="title" colspan="7">'.htmlentities($lang->aajf[0], ENT_QUOTES).'</td>
 </tr>
 <tr>
-<td class="title2">'.htmlentities($lang->aaiy[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title2">'.htmlentities($lang->aaiz[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title2">'.htmlentities($lang->aaja[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title2">'.htmlentities($lang->aajb[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title2">'.htmlentities($lang->aajc[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title2">'.htmlentities($lang->aajd[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title2">'.htmlentities($lang->aaje[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="title2">'.htmlentities($lang->aaiy[0], ENT_QUOTES).'</td>
+<td class="title2">'.htmlentities($lang->aaiz[0], ENT_QUOTES).'</td>
+<td class="title2">'.htmlentities($lang->aaja[0], ENT_QUOTES).'</td>
+<td class="title2">'.htmlentities($lang->aajb[0], ENT_QUOTES).'</td>
+<td class="title2">'.htmlentities($lang->aajc[0], ENT_QUOTES).'</td>
+<td class="title2">'.htmlentities($lang->aajd[0], ENT_QUOTES).'</td>
+<td class="title2">'.htmlentities($lang->aaje[0], ENT_QUOTES).'</td>
 </tr>
 <tr>
 <td><input type="checkbox" name="monday" value="1" '.$day1 .'></td>
@@ -228,7 +228,7 @@ $body=$body.'
 <td><input type="checkbox" name="sunday" value="1" '.$day7 .'></td>
 </tr>
 <tr>
-<td colspan="7"><input id="submit" type="submit" value="'.htmlentities($lang->aajg[0], ENT_QUOTES, "UTF-8").'"></td>
+<td colspan="7"><input id="submit" type="submit" value="'.htmlentities($lang->aajg[0], ENT_QUOTES).'"></td>
 </tr>
 </table>
 </form>
@@ -241,8 +241,8 @@ if($out!=null)
 $body=$body.'
 <table id="show_all" >
  <tr>
-<td class="title">'.htmlentities($lang->aajh[0], ENT_QUOTES, "UTF-8").'</td>
-<td class="title">'.htmlentities($lang->aaji[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="title">'.htmlentities($lang->aajh[0], ENT_QUOTES).'</td>
+<td class="title">'.htmlentities($lang->aaji[0], ENT_QUOTES).'</td>
  <td></td>
  </tr>
 ';
@@ -252,7 +252,7 @@ for($i=0;count($out)>$i;$i++)
 <tr>
 <td class="left">'.htmlentities($out[$i]["date_bigger"], ENT_QUOTES).'</td>
 <td class="left">'.htmlentities($out[$i]["date_smaller"], ENT_QUOTES).'</td>
-<td class="left1"><a href="index.php?where=days_off&delete_id='.$out[$i]["days_off_id"].'">'.htmlentities($lang->aabk[0], ENT_QUOTES, "UTF-8").'</a></td>
+<td class="left1"><a href="index.php?where=days_off&delete_id='.$out[$i]["days_off_id"].'">'.htmlentities($lang->aabk[0], ENT_QUOTES).'</a></td>
  </tr>
  ';
 }
@@ -264,7 +264,7 @@ $body=$body.'
  else
  {
  $body=$body.'
-<div id="margin1"><div id="nothing">'.htmlentities($lang->aajj[0], ENT_QUOTES, "UTF-8").'<br/>'.htmlentities($lang->aajk[0], ENT_QUOTES, "UTF-8").'</div></div>
+<div id="margin1"><div id="nothing">'.htmlentities($lang->aajj[0], ENT_QUOTES).'<br/>'.htmlentities($lang->aajk[0], ENT_QUOTES).'</div></div>
 ';
  }
 
@@ -274,20 +274,20 @@ $body=$body.'
 
 <table id="media_all">
 <tr>
-<td class="title" colspan="2">'.htmlentities($lang->aajl[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="title" colspan="2">'.htmlentities($lang->aajl[0], ENT_QUOTES).'</td>
 </tr>
   <tr>
-    <td class="left">'.htmlentities($lang->aajh[0], ENT_QUOTES, "UTF-8").'</td>
+    <td class="left">'.htmlentities($lang->aajh[0], ENT_QUOTES).'</td>
     <td><input class="right1" name="bigger" type="text" size="50" maxlength="50"></td>
   </tr>
     <tr>
-    <td class="left">'.htmlentities($lang->aaji[0], ENT_QUOTES, "UTF-8").'</td>
+    <td class="left">'.htmlentities($lang->aaji[0], ENT_QUOTES).'</td>
     <td><input class="right1" name="smaller" type="text" size="50" maxlength="50"></td>
   </tr>
     <tr>
     <td>
 </td>
-    <td><input class="submit1" type="submit" value="'.htmlentities($lang->aaao[0], ENT_QUOTES, "UTF-8").'"></td>
+    <td><input class="submit1" type="submit" value="'.htmlentities($lang->aaao[0], ENT_QUOTES).'"></td>
   </tr>
 </table>
 </form>

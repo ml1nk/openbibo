@@ -7,7 +7,7 @@ db::connect($mysqlhost, $mysqluser, $mysqlpwd, $mysqldb); // connect to database
 $configuration = load_config(); // load the configuration from the database
 $lang = load_lang($configuration[0]); //load the language file
 
-$head = '<title>'.htmlentities($lang->aags[0], ENT_QUOTES, "UTF-8").'</title>'.load_design($configuration[1],"opac",false);
+$head = '<title>'.htmlentities($lang->aags[0], ENT_QUOTES).'</title>'.load_design($configuration[1],"opac",false);
 
 $search_out=null;
 if (isset($_POST["search_text"]))
@@ -55,7 +55,7 @@ $search_out = $search_out . media_search_overview($media[$i],$lang,true);
 }
 else
 {
-$search_out = '<div id="error">'.htmlentities($lang->aabc[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aabd[0], ENT_QUOTES, "UTF-8").'</div>';
+$search_out = '<div id="error">'.htmlentities($lang->aabc[0], ENT_QUOTES)."<br/>".htmlentities($lang->aabd[0], ENT_QUOTES).'</div>';
 }
 
 }
@@ -66,7 +66,7 @@ $search_out = '<div id="search_results">'.$search_out.'</div>';
 }
 else
 {
-$search_out = '<div id="search_results"><div id="nothing">'.htmlentities($lang->aahx[0], ENT_QUOTES, "UTF-8")."<br/>".htmlentities($lang->aaba[0], ENT_QUOTES, "UTF-8").'</div></div>';
+$search_out = '<div id="search_results"><div id="nothing">'.htmlentities($lang->aahx[0], ENT_QUOTES)."<br/>".htmlentities($lang->aaba[0], ENT_QUOTES).'</div></div>';
 }
 }
 
@@ -88,13 +88,13 @@ $body = '
 '.$table_id.'
 <tr>
 
-<td class="left">'.htmlentities($lang->aaaw[0], ENT_QUOTES, "UTF-8").'</td>
+<td class="left">'.htmlentities($lang->aaaw[0], ENT_QUOTES).'</td>
 <td><input id="right1" name="search_text" type="text" value='."'".$oldsearch."'".' size="100" maxlength="100"></td>
 
 </tr>
 <tr>
 <td colspan="2">
-<input id="submit" type="submit" value="'.htmlentities($lang->aaav[0], ENT_QUOTES, "UTF-8").'">
+<input id="submit" type="submit" value="'.htmlentities($lang->aaav[0], ENT_QUOTES).'">
 </td>
 </tr>
 
