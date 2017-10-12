@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<de>
+<aaaa>Login</aaaa>
+<aaab>Name</aaab>
+<aaac>Passwort</aaac>
+<aaad>Anmelden</aaad>
+<aaae>Name oder Passwort sind falsch.</aaae>
+<aaaf>Bitte versuchen sie es erneut.</aaaf>
+<aaag>Ihre Sitzung ist abgelaufen,</aaag>
+<aaah>bitte melden sie sich neu an.</aaah>
+<aaai>Übersicht</aaai>
+<aaaj>Anzahl von verschiedenen Medien</aaaj>
+<aaak>Anzahl von Exemplaren dieser Medien</aaak>
+<aaal>Anzahl ausgeliehener Exemplare</aaal>
+<aaam>Medien</aaam>
+<aaan>Suchen</aaan>
+<aaao>Erstellen</aaao>
+<aaap>Mediensuche</aaap>
+<aaaq>Anzahl der angemeldeten Benutzer</aaaq>
+<aaar>Suchtyp</aaar>
+<aaas>Barcode</aaas>
+<aaat>Titel</aaat>
+<aaau>Autor</aaau>
+<aaav>Suchen</aaav>
+<aaaw>Suchtext</aaaw>
+<aaax>Leider ist der eingegebene Barcode ungültig.</aaax>
+<aaay>Ein Barcode besteht immer aus einer sechsstelligen Zahl.</aaay>
+<aaaz>Es wurde kein passender Barcode gefunden.</aaaz>
+<aaba>Kontrollieren sie bitte ihre Eingabe.</aaba>
+<aabb>Es wurde kein passender Titel gefunden.</aabb>
+<aabc>Bitte geben sie mehr als drei Zeichen ein,</aabc>
+<aabd>da sonst zu viele Medien gefunden werden.</aabd>
+<aabe>Es wurde kein passender Autor gefunden.</aabe>
+<aabf>Ein Exemplar dieses Medium ist verfügbar.</aabf>
+<aabg>Alle Exemplare dieses Medium sind verliehen.</aabg>
+<aabh>Band</aabh>
+<aabi>Kategorie</aabi>
+<aabj>Medienart</aabj>
+<aabk>Löschen</aabk>
+<aabl>Medienansicht</aabl>
+<aabm>Ein Medium mit der ID</aabm>
+<aabn>existiert nicht.</aabn>
+<aabo>Bitte geben sie eine gültige Medien ID ein.</aabo>
+<aabp>Es konnte nichts geändert werden,</aabp>
+<aabq>weil es keine Änderungen gab.</aabq>
+<aabr>Änderungen Speichern</aabr>
+<aabs>Ein identisches Medium existiert bereits.</aabs>
+<aabt>Der Titel jedes Medium muss mehr als drei Zeichen besitzen.</aabt>
+<aabu>Bitte korrigieren sie ihre Angaben.</aabu>
+<aabv>Dieser Barcode existiert bereits.</aabv>
+<aabw>Bitte versuchen sie es mit einem anderen.</aabw>
+<aabx>Das Exemplar wurde erfolgreich gelöscht</aabx>
+<aaby>Alle Abhängigkeiten wurden aufgelöst.</aaby>
+<aabz>Exemplare</aabz>
+<aaca>Barcode</aaca>
+<aacb>Ausgeliehen von</aacb>
+<aacc>Verlängerungen</aacc>
+<aacd>Abgabe Termin</aacd>
+<aace>Es existiert zu diesem Medium kein Exemplar.</aace>
+<aacf>Bitte legen sie eines an.</aacf>
+<aacg>Neues Exemplar</aacg>
+<aach>Erstellen</aach>
+<aaci>Das Medium wurde erfolgreich gelöscht.</aaci>
+<aacj>Wollen sie dieses Medium wirklich löschen?</aacj>
+<aack>Ja</aack>
+<aacl>Nein</aacl>
+<aacm>Eine Medien ID besteht immer auschließlich aus Zahlen.</aacm>
+<aacn>Bitte geben sie eine gültige Medien ID ein.</aacn>
+<aaco>Es ist kein Medium ausgewählt.</aaco>
+<aacp>Neues Medium</aacp>
+<aacq>Medium anlegen</aacq>
+<aacr>Das Medium wurde erfolgreich erstellt.</aacr>
+<aacs>Klicken sie</aacs>
+<aact>hier</aact>
+<aacu>um dazu ein Exemplar einzutragen.</aacu>
+<aacv>Benutzersuche</aacv>
+<aacw>Benutzeransicht</aacw>
+<aacx>Neuer Benutzer</aacx>
+<aacy>Benutzer</aacy>
+<aacz>Benutzername</aacz>
+<aada>E-Mail</aada>
+<aadb>Der Benutzername muss mehr als drei Zeichen besitzen.</aadb>
+<aadc>Das Medium konnte nicht erstellt werden.</aadc>
+<aadd>Der Benutzer konnte nicht erstellt werden.</aadd>
+<aade>Der Barcode gehört bereits einem anderen.</aade>
+<aadf>um ihn anzuzeigen.</aadf>
+<aadg>Der Benutzer wurde erfolgreich erstellt.</aadg>
+<aadh>Es wurde kein Medium ausgeliehen.</aadh>
+<aadi>Es wurden eines oder mehrere Medien ausgeliehen.</aadi>
+<aadj>Es sind eine oder mehrere Medien überfällig.</aadj>
+<aadk>Es ist kein Benutzer ausgewählt.</aadk>
+<aadl>Bitte geben sie eine gültige Benutzer ID ein.</aadl>
+<aadm>Eine Benutzer ID besteht immer auschließlich aus Zahlen.</aadm>
+<aadn>Bitte geben sie eine gültige Benutzer ID ein.</aadn>
+<aado>Ein Benutzer mit der ID</aado>
+<aadp>da sonst zu viele Benutzer gefunden werden.</aadp>
+<aadq>Wollen sie diesen Benutzer wirklich Löschen?</aadq>
+<aadr>Der angewählte Benutzer,</aadr>
+<aads>hat nichts ausgeliehen.</aads>
+<aadt>Der Benutzer wurde erfolgreich gelöscht.</aadt>
+<aadu>Der Name eines Benutzers benötigt mehr als vier Zeichen.</aadu>
+<aadv>Ausgeliehene Exemplare</aadv>
+<aadw>Titel des Medium</aadw>
+<aadx>Das Exemplar wurde zurückgegeben.</aadx>
+<aady>Somit ist es wieder für die Ausleihe verfügbar.</aady>
+<aadz>Rückgabe</aadz>
+<aaea>Das Exemplar konnte nicht zurück gegeben werden.</aaea>
+<aaeb>Es wurde nicht von dem gewählten Benutzer ausgeliehen.</aaeb>
+<aaec>Das Exemplar konnte nicht gelöscht werden.</aaec>
+<aaed>Es hat nicht existiert.</aaed>
+<aaee>Medium Ausleihen</aaee>
+<aaef>Ausleihen</aaef>
+<aaeg>Dieses Exemplar ist bereits verliehen.</aaeg>
+<aaeh>Verleih</aaeh>
+<aaei>Rückgabe</aaei>
+<aaej>Verlängern</aaej>
+<aaek>Ausleihender Benutzer</aaek>
+<aael>Auszuleihendes Exemplar</aael>
+<aaem>Auswählen</aaem>
+<aaen>Es wurde für diesen Barcode kein Benutzer gefunden.</aaen>
+<aaeo>Das Medium wurde erfolgreich verliehen.</aaeo>
+<aaep>Sie können nun das nächste Medium ausleihen.</aaep>
+<aaeq>Eingehendes Exemplar</aaeq>
+<aaer>Zurückgeben</aaer>
+<aaes>Es wurde nicht verliehen.</aaes>
+<aaet>wurde erfolgreich von</aaet>
+<aaeu>innerhalb der Zeit zurückgegeben.</aaeu>
+<aaev>verspätet seit</aaev>
+<aaew>zurückgegeben.</aaew>
+<aaex>Ausgeliehenes Exemplar verlängern</aaex>
+<aaey>Ausführen</aaey>
+<aaez>Das Exemplar konnte nicht verlängert werden.</aaez>
+<aafa>zum</aafa>
+<aafb>mal</aafb>
+<aafc>innerhalb der Zeit  verlängert.</aafc>
+<aafd>verlängert.</aafd>
+<aafe>Ausgeliehenes Exemplar des angewählten Benutzer wurde verlängert.</aafe>
+<aaff>Somit hat er wieder die festgelegte Zeit um das Exemplar zurück zu bringen.</aaff>
+<aafg>Es wurde vom gewählten Benutzer nicht ausgeliehen.</aafg>
+<aafh>Alle zurückgeben</aafh>
+<aafi>Alle verlängern</aafi>
+<aafj>Alle Exemplare wurden zurückgegeben.</aafj>
+<aafk>Der ausgewählte Benutzer hat somit keine Exemplare mehr ausgeliehen.</aafk>
+<aafl>Der Benutzer hat kein Exemplar ausgeliehen.</aafl>
+<aafm>Somit konnte kein Exemplar zurückgegeben werden.</aafm>
+<aafn>Alle ausgeliehenen Exemplare des Benutzers wurden erfolgreich verlängert.</aafn>
+<aafo>Somit hat er wieder die festgelegte Zeit um alle Exemplar zurück zu bringen.</aafo>
+<aafp>Es konnte keine Exemplar verlängert werden.</aafp>
+<aafq>Da keines ausgeliehen wurde.</aafq>
+<aafr>Mein Profil</aafr>
+<aafs>Absenden</aafs>
+<aaft>Abmelden</aaft>
+<aafu>Altes Passwort</aafu>
+<aafv>Neues Passwort</aafv>
+<aafw>Neues Passwort Wiederholung</aafw>
+<aafx>Das eingegebene alte Password</aafx>
+<aafy>ist nicht korrekt.</aafy>
+<aafz>Das neue Passwort stimmt</aafz>
+<aaga>mit der Wiederholung nicht überein.</aaga>
+<aagb>Das neue Passwort ist zu kurz.</aagb>
+<aagc>Es muss mindestens 6 Zeichen lang sein.</aagc>
+<aagd>Das Passwort wurde geändert.</aagd>
+<aage>Denken sie daran beim nächsten Login.</aage>
+<aagf>Konfiguration</aagf>
+<aagg>Medienarten</aagg>
+<aagh>Kategorien</aagh>
+<aagi>Ruhetage</aagi>
+<aagj>Manager</aagj>
+<aagk>Einstellungen</aagk>
+<aagl>Das Inaktivitäts Logout und die Leihfrist benötigen Zahlen.</aagl>
+<aagm>Bitte korrigieren sie den/die Fehler.</aagm>
+<aagn>Name der Bibliothek</aagn>
+<aago>Inaktivitäts Logout</aago>
+<aagp>Leihfrist (ausgenommen Ruhetage)</aagp>
+<aagq>Design auswählen</aagq>
+<aagr>Sprache auswählen</aagr>
+<aags>OPAC Suche</aags>
+<aagt>Verspätet</aagt>
+<aagu>Die angeforderte Seite wurde nicht gefunden.</aagu>
+<aagv>Bitte wählen sie eine bestehende.</aagv>
+<aagw>Seite existiert nicht</aagw>
+<aagx>Überfällige Benutzer</aagx>
+<aagy>Manager Verwalten</aagy>
+<aagz>Passwort</aagz>
+<aaha>Passwort Wiederholen</aaha>
+<aahb>Der eingegebene Benutzername ist zu kurz.</aahb>
+<aahc>Er benötigt mindestens 4 Zeichen.</aahc>
+<aahd>Die eingegebenen Passwörter stimmen nicht überein.</aahd>
+<aahe>Bitte gleichen sie diese an.</aahe>
+<aahf>Das angegebene Passwort ist zu kurz.</aahf>
+<aahg>Der eingegebene Benutzername existiert bereits.</aahg>
+<aahh>Bitte wählen sie einen anderen.</aahh>
+<aahi>Der Benutzer wurde erfolgreich erstellt.</aahi>
+<aahj>Er ist nun verfügbar.</aahj>
+<aahk>Außer ihnen existiert</aahk>
+<aahl>kein Benutzer</aahl>
+<aahm>Passwort Ändern</aahm>
+<aahn>Ändern</aahn>
+<aaho>Benutzer wurde erfolgreich gelöscht.</aaho>
+<aahp>Der Name wurde freigegeben.</aahp>
+<aahq>Benutzer konnte nicht gelöscht  werden.</aahq>
+<aahr>Er existiert nicht.</aahr>
+<aahs>Benutzername</aahs>
+<aaht>E-Mail</aaht>
+<aahu>Titel des Exemplar</aahu>
+<aahv>Barcode des Exemplar</aahv>
+<aahw>Überfällig seit</aahw>
+<aahx>Die Datenbank wurde ohne Ergebnisse durchsucht.</aahx>
+<aahy>Verliehen</aahy>
+<aahz>Verliehene Medien</aahz>
+<aaia>Verliehen bis</aaia>
+<aaib>Inhalt</aaib>
+<aaic>Name der Kategorie</aaic>
+<aaid>Neue Kategorie</aaid>
+<aaie>Eine neue Kategorie wurde erfolgreich angelegt.</aaie>
+<aaif>Sie ist nun in der Auswahl verfügbar.</aaif>
+<aaig>Die neue Kategorie konnte nicht angelegt werden.</aaig>
+<aaih>Denn sie muss mehr als 3 Zeichen lang sein.</aaih>
+<aaii>Die Kategory konnte nicht unbenannt werden.</aaii>
+<aaij>Die Kategory wurde erfolgreich unbenannt.</aaij>
+<aaik>Sie ist nun unter neuem namen in der Auswahl verfügbar.</aaik>
+<aail>Wollen sie diese Kategorie wirklich löschen?</aail>
+<aaim>Name der Medienart</aaim>
+<aain>Neue Medienart</aain>
+<aaio>Die Kategory wurde erfolgreich gelöscht</aaio>
+<aaip>Die Medienart wurde erfolgreich gelöscht</aaip>
+<aaiq>Die Medienart konnte nicht unbenannt werden.</aaiq>
+<aair>Die Medienart wurde erfolgreich unbenannt.</aair>
+<aais>Die neue Medienart konnte nicht angelegt werden.</aais>
+<aait>Die Medienart wurde erfolgreich unbenannt.</aait>
+<aaiu>Wollen sie diese Medienart wirklich löschen?</aaiu>
+<aaiv>Medienarten verwalten</aaiv>
+<aaiw>Kategorien verwalten</aaiw>
+<aaix>Ruhetage verwalten</aaix>
+<aaiy>Montag</aaiy>
+<aaiz>Dienstag</aaiz>
+<aaja>Mittwoch</aaja>
+<aajb>Donnerstag</aajb>
+<aajc>Freitag</aajc>
+<aajd>Samstag</aajd>
+<aaje>Sonntag</aaje>
+<aajf>Geschlossene Wochentage</aajf>
+<aajg>Aktualisieren</aajg>
+<aajh>Datum größer als</aajh>
+<aaji>Datum kleiner als</aaji>
+<aajj>Es wurden keine</aajj>
+<aajk>Ruhetage gesetzt</aajk>
+<aajl>Ruhetage setzen</aajl>
+<aajm>Die eingegebenen Daten sind unvollständig oder ungültig.</aajm>
+<aajn>Bitte geben sie beide Datums wie folgt ein DD.MM.JJ</aajn>
+<aajo>Die eingegeben Datums müssen mindestens einen Tag</aajo>
+<aajp>zwischen sich haben, dieser ist dann als Ruhetag markiert.</aajp>
+<aajq>Die eingegeben Daten wurden eingefügt.</aajq>
+<aajr>Die dadurch gewählten Ruhetage sind nun aktiv.</aajr>
+<aajs>Die gewählte ID existiert nicht.</aajs>
+<aajt>Wurde sie bereits gelöscht?</aajt>
+<aaju>Die gewählt ID wurde gelöscht.</aaju>
+<aajv>Die davon besetzten Ruhetage sind somit wieder frei.</aajv>
+<aajw>Anzahl überfälliger Benutzer</aajw>
+<aajx>Werkzeuge</aajx>
+<aajy>Version</aajy>
+<aajz>Versionsinformationen</aajz>
+<aaka>Version der Software</aaka>
+<aakb>Version der Datenbank</aakb>
+<aakc>Informationstext</aakc>
+<aakd>PHP-Status</aakd>
+<aake>Aktualisierungsverwaltung</aake>
+<aakf>Aktualisieren</aakf>
+<aakg>Verspätung (Tage)</aakg>
+<aakh>Leider sind eine oder mehrere Dateien</aakh>
+<aaki>im Software Ordner nicht beschreibar!!!</aaki>
+<aakj>Verpacktes Update hochladen</aakj>
+<aakk>Cents pro verspäteten Tag</aakk>
+<aakl>Kosten(Cent)</aakl>
+</de>

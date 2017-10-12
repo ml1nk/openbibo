@@ -1,0 +1,119 @@
+.return{
+background-image:url(white.png);
+padding-top:5px;
+margin-left: 345px;
+margin-top: 95px;
+border: 7px double white;
+color: #333;
+width: 500px;
+height:200px;
+text-align:center;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+margin-bottom:50px;
+}
+
+.title{
+font-size:25px; 
+font-weight:bold; 
+text-align:center;
+}
+.left{
+padding-left:30px;
+font-size:17px; 
+font-weight:bold; 
+width:100px;
+text-align:left;
+}
+
+.barcode{ 
+background-color:#ffa; 
+width:100px; 
+text-align:center;
+border:6px solid #ddd; 
+}
+
+.submit{
+background-color:#aaa;
+color:black;
+font-size:17px; 
+font-weight:bold; 
+width:400px;
+border:6px solid #ddd; 
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+text-align:center;
+}
+
+.submit:hover { text-decoration:none; font-style:italic;cursor:pointer;}
+
+#nothing{
+background-image:url(orange.png);
+border: 3px solid white;
+font-weight: bold;
+font-size: 16px;
+color: white;
+margin-left:290px;
+height: 50px;
+width: 600px;
+padding-top:10px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+text-align:center;
+}
+#nothing_special{
+background-image:url(orange.png);
+border: 3px solid white;
+font-weight: bold;
+font-size: 16px;
+color: white;
+margin-left:190px;
+height: 90px;
+width: 800px;
+padding-top:10px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+text-align:center;
+}
+#error{
+background-image:url(red.png);
+border: 3px solid white;
+font-weight: bold;
+font-size: 16px;
+color: white;
+margin-left:290px;
+height: 50px;
+width: 600px;
+padding-top:10px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+text-align:center;
+}
+
+#margin{
+margin-top:50px;
+margin-bottom:50px;
+}
+
+
+.green{
+margin-left:50px;
+background-color:green;
+width: 700px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+}
+.red{
+margin-left:50px;
+background-color:red;
+width: 700px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+}

@@ -1,0 +1,32 @@
+html, body
+{
+background:none; 
+}
+
+#main{
+width:100%;
+}
+
+#print{
+width:100%;
+border: 7px double black;
+}
+
+.title{
+font-size:16px; 
+font-weight:bold; 
+text-align:center;
+height:25px;
+}
+
+
+.empty{
+height:25px;
+}
+
+.left{
+padding-left:10px;
+font-size:16px; 
+font-weight:normal; 
+text-align:left;
+}

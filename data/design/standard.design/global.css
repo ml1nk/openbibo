@@ -1,0 +1,14 @@
+html, body
+{
+background-image:url(background.jpg);
+font-family: Verdana, Arial, Helvetica, sans-serif;
+min-height:100%;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+a:link { text-decoration:none; color:black; }
+a:hover { text-decoration:none; font-style:italic;}

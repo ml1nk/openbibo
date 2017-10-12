@@ -1,0 +1,128 @@
+#main{
+background-image:url(menu_back.png);
+text-align:center;
+width:1210px;
+min-height:100%;
+left:50%;
+margin-left:-600px;
+position: absolute;
+border: 5px solid #bbbbbb;
+border-top-width:0;
+border-bottom-width:0;
+}
+
+#body{
+margin-top:55px;
+padding-left:5px;
+padding-right:5px;
+width:1200px;
+text-align:left;
+}
+
+#menu {
+z-index:9999;
+height:30px;
+width: 1175px;
+padding-left:35px;
+padding-top:10px;
+padding-bottom:10px;
+font-family: Verdana;
+font-size: 1em;
+line-height: 1.5;
+float: left;
+position: fixed;
+background-color: #272727;
+}
+
+
+#menu ul {
+float: left;
+width: 140px;
+list-style-type: none;
+}
+
+/*--definiert die Blocküberschriften--*/
+#menu h3 {
+font-size: 1em;
+text-align: center;
+color: white;
+}
+
+
+#menu a.direkt, #menu h3 {
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+}
+
+/*--definiert die "Drop-Down-Links" im Normalzustand--*/
+#menu a {
+text-decoration: none;
+display: block;
+text-align: center;
+color: white;
+background-color: #272727;
+}
+
+/*--definiert die "Drop-Down-Links" im Hoverzustand--*/
+#menu a:hover {
+color: #ff9224;
+}
+
+/*verhindert im Zusammenhang mit position absolute bei ul ul
+*eine Höhenvergrößerung von #menu beim Hovern--
+*/
+
+#menu li {
+position: relative;
+}
+
+/*--versteckt die "Drop-Down-Links", solange nicht gehovert wird--*/
+#menu ul ul {
+position: absolute;
+z-index: 2;
+display: none;
+}
+
+/*--lässt die Dropdown-Links beim Hovern erscheinen--*/
+#menu ul li:hover ul {
+display: block;
+}
+
+/*--nur für IE-Versionen kleiner gleich 6 erkennbar--*/
+* html #menu ul li{
+float: left;
+width: 100%;
+}
+
+/*--nur für IE 7 erkennbar--*/
+*+ html #menu ul li {
+float: left;
+width: 100%;
+}
+
+/*--bewirkt Hover-Effekt für IE kleiner 7 auch für ul- und li-Elemente--*/
+*html body {
+behavior: url(csshover3-source.htc);
+font-size: 100%;
+}
+
+*html #menu ul li a {
+height: 1%;
+}
+
+/*--definiert einen Einzellink im Normalzustand, wenn kein Drop-Down erforderlich--*/
+
+#menu a.direkt:link {
+font-size: 1em;
+font-weight: bold;
+text-align: center;
+color: white;
+
+}
+
+/*--definiert einen Einzellink im Hoverzustand, wenn kein Drop-Down erforderlich--*/
+
+#menu a.direkt:hover {
+color: #ff9224;
+}

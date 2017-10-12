@@ -1,0 +1,56 @@
+#update{
+background-image:url(blue.png);
+font-size:20px;
+font-weight:bold;
+color:white;
+width:700px;
+height:160px;
+margin-left:250px;
+margin-top:75px;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border: 7px double white;
+text-align:center;
+}
+
+.upload { 
+margin-top:35px;
+background-color:#ffa; 
+}
+
+#submit{
+margin-top:35px;
+background-color:#aaa;
+color:black;
+font-size:17px; 
+font-weight:bold; 
+width:400px;
+border:6px solid #ddd; 
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+}
+
+#submit:hover { text-decoration:none; font-style:italic;cursor:pointer;}
+
+#error{
+background-image:url(red.png);
+border: 3px solid white;
+font-weight: bold;
+font-size: 16px;
+color: white;
+margin-left:290px;
+height: 50px;
+width: 600px;
+padding-top:10px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+text-align:center;
+}
+
+#margin{
+margin-top:100px;
+margin-bottom:50px;
+}

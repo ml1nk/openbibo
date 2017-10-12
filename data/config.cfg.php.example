@@ -1,0 +1,5 @@
+<?php
+    $mysqlhost="db"; // MySQL-Host angeben
+    $mysqluser="openbibo"; // MySQL-User angeben
+    $mysqlpwd="openbibo"; // Passwort angeben
+    $mysqldb="openbibo"; // Gewuenschte Datenbank angeben
