@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.6.6deb4
 -- https://www.phpmyadmin.net/
 --
--- Host: db
--- Generation Time: Oct 12, 2017 at 09:35 PM
--- Server version: 5.7.19
--- PHP Version: 7.0.21
+-- Host: localhost:3306
+-- Generation Time: Oct 13, 2017 at 12:36 AM
+-- Server version: 10.1.26-MariaDB-0+deb9u1
+-- PHP Version: 7.0.19-1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -35,7 +33,7 @@ CREATE TABLE `borrow` (
   `renewal_count` int(11) NOT NULL,
   `timestamp` int(11) NOT NULL,
   `days` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -44,16 +42,16 @@ CREATE TABLE `borrow` (
 --
 
 CREATE TABLE `configuration` (
-  `language` varchar(10) NOT NULL,
-  `design` varchar(20) NOT NULL,
+  `language` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `design` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `logout_time` int(11) NOT NULL,
-  `library_name` varchar(80) NOT NULL,
+  `library_name` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
   `borrow_days` int(11) NOT NULL,
-  `days_off` varchar(7) NOT NULL,
-  `database_version` varchar(10) NOT NULL,
-  `info_text` varchar(500) NOT NULL,
+  `days_off` varchar(7) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `database_version` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `info_text` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
   `cent_per_day` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -65,7 +63,7 @@ CREATE TABLE `days_off` (
   `days_off_id` int(11) NOT NULL,
   `date_bigger` int(11) NOT NULL,
   `date_smaller` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -75,15 +73,15 @@ CREATE TABLE `days_off` (
 
 CREATE TABLE `manager` (
   `manager_id` int(11) NOT NULL,
-  `name` varchar(40) NOT NULL,
-  `password` char(128) NOT NULL,
+  `name` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` char(128) COLLATE utf8mb4_unicode_ci NOT NULL,
   `permissions` int(11) NOT NULL,
   `lastactivity` int(11) NOT NULL,
-  `salt` varchar(32) NOT NULL,
-  `cookie` varchar(128) NOT NULL,
+  `salt` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cookie` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
   `login` int(11) NOT NULL,
-  `lastip` varchar(15) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `lastip` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -93,8 +91,8 @@ CREATE TABLE `manager` (
 
 CREATE TABLE `media_category` (
   `category_id` smallint(6) NOT NULL,
-  `name` varchar(40) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `name` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -105,8 +103,8 @@ CREATE TABLE `media_category` (
 CREATE TABLE `media_copy` (
   `media_id` int(11) NOT NULL,
   `copy_id` int(11) NOT NULL,
-  `barcode` varchar(6) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `barcode` varchar(6) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -118,10 +116,10 @@ CREATE TABLE `media_list` (
   `media_id` int(11) NOT NULL,
   `type_id` smallint(6) NOT NULL,
   `category_id` smallint(6) NOT NULL,
-  `series` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `title` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `author` varchar(100) CHARACTER SET latin1 DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
+  `series` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `title` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `author` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -131,9 +129,9 @@ CREATE TABLE `media_list` (
 
 CREATE TABLE `media_type` (
   `type_id` smallint(6) NOT NULL,
-  `name` varchar(40) NOT NULL,
+  `name` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
   `picture` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -143,10 +141,10 @@ CREATE TABLE `media_type` (
 
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
-  `barcode` varchar(6) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `email` varchar(50) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `barcode` varchar(6) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Indexes for dumped tables
@@ -182,7 +180,8 @@ ALTER TABLE `media_category`
 --
 ALTER TABLE `media_copy`
   ADD PRIMARY KEY (`media_id`,`copy_id`),
-  ADD KEY `barcode_index` (`barcode`);
+  ADD KEY `barcode_index` (`barcode`),
+  ADD KEY `copy_id` (`copy_id`);
 
 --
 -- Indexes for table `media_list`
@@ -211,44 +210,36 @@ ALTER TABLE `user`
 --
 ALTER TABLE `days_off`
   MODIFY `days_off_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
-
 --
 -- AUTO_INCREMENT for table `manager`
 --
 ALTER TABLE `manager`
   MODIFY `manager_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
 --
 -- AUTO_INCREMENT for table `media_category`
 --
 ALTER TABLE `media_category`
   MODIFY `category_id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
-
 --
 -- AUTO_INCREMENT for table `media_copy`
 --
 ALTER TABLE `media_copy`
-  MODIFY `copy_id` int(11) NOT NULL AUTO_INCREMENT;
-
+  MODIFY `copy_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `media_list`
 --
 ALTER TABLE `media_list`
   MODIFY `media_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6841;
-
 --
 -- AUTO_INCREMENT for table `media_type`
 --
 ALTER TABLE `media_type`
   MODIFY `type_id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=449;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
